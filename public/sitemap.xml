@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://people.cs.uchicago.edu/~macmillan/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://people.cs.uchicago.edu/~macmillan/posts/sample-post/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://people.cs.uchicago.edu/~macmillan/posts/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://people.cs.uchicago.edu/~macmillan/blog/</loc>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://people.cs.uchicago.edu/~macmillan/blog/generation-groups/</loc>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://people.cs.uchicago.edu/~macmillan/blog/stupra/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://people.cs.uchicago.edu/~macmillan/categories/</loc>
+  </url><url>
+    <loc>https://people.cs.uchicago.edu/~macmillan/misc/</loc>
+  </url><url>
+    <loc>https://people.cs.uchicago.edu/~macmillan/papers/</loc>
+  </url><url>
+    <loc>https://people.cs.uchicago.edu/~macmillan/tags/</loc>
+  </url>
+</urlset>

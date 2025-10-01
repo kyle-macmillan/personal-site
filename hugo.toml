@@ -1,0 +1,25 @@
+baseURL = 'https://people.cs.uchicago.edu/~macmillan/'
+languageCode = 'en-us'
+title = 'Kyle MacMillan'
+theme = 'xmin'
+
+[params]
+  description = "A blog with beautiful sidenotes"
+  footer = ""
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
+  [[menu.main]]
+    name = "CV"
+    url = "/pdfs/cv.pdf"
+    weight = 2
+  [[menu.main]]
+    name = "Scholar"
+    url = "https://scholar.google.com/citations?user=-mt8ztEAAAAJ&hl=en"
+    weight = 3

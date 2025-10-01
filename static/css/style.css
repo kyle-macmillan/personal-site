@@ -1,0 +1,83 @@
+/* Override xmin theme's narrow width */
+body {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Keep some of the useful theme styles */
+.menu { 
+  padding: 0;
+  font-family: 'Alegreya', Georgia, serif !important;
+}
+.menu li { 
+  display: inline-block;
+  font-family: 'Alegreya', Georgia, serif !important;
+}
+.menu, .article-meta, footer { 
+  text-align: center;
+  font-family: 'Alegreya', Georgia, serif !important;
+}
+.title { 
+  font-size: 1.1em;
+  font-family: 'Alegreya', Georgia, serif !important;
+}
+footer a { 
+  text-decoration: none;
+  font-family: 'Alegreya', Georgia, serif !important;
+}
+
+hr {
+  border-style: dashed;
+  color: #ddd;
+}
+
+/* code */
+pre {
+  border: 1px solid #ddd;
+  box-shadow: 5px 5px 5px #eee;
+  padding: 1em;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+}
+code { 
+  background: #f9f9f9;
+  font-family: 'Courier New', monospace;
+}
+pre code { 
+  background: none;
+  font-family: 'Courier New', monospace;
+}
+
+/* misc elements */
+img, iframe, video { max-width: 100%; }
+main { 
+  hyphens: auto;
+  font-family: 'Alegreya', Georgia, serif !important;
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #ccc;
+  padding: 3px 1em 3px;
+  font-family: 'Alegreya', Georgia, serif !important;
+}
+
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  font-family: 'Alegreya', Georgia, serif !important;
+}
+table thead th { 
+  border-bottom: 1px solid #ddd;
+  font-family: 'Alegreya', Georgia, serif !important;
+}
+th, td { 
+  padding: 5px;
+  font-family: 'Alegreya', Georgia, serif !important;
+}
+thead, tfoot, tr:nth-child(even) { 
+  background: #eee;
+  font-family: 'Alegreya', Georgia, serif !important;
+}

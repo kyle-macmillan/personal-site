@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="home-content">
+  <div class="home-text">
+    {{ .Content }}
+    
+    <h2>Recent Blog Posts</h2>
+    <ul class="post-list">
+    {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+      <li>
+        <span class="post-date">{{ .Date.Format "2006/01/02" }}</span>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+    </ul>
+  </div>
+  {{ with .Params.image }}
+  <figure class="home-image">
+    <img src="{{ . | relURL }}" alt="Profile picture">
+    {{ with $.Params.image_caption }}
+    <figcaption class="image-caption">
+      {{ . }}
+    </figcaption>
+    {{ end }}
+  </figure>
+  {{ end }}
+</div>
+{{ end }}
