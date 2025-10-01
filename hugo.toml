@@ -2,6 +2,7 @@ baseURL = 'https://people.cs.uchicago.edu/~macmillan/'
 languageCode = 'en-us'
 title = 'Kyle MacMillan'
 theme = 'xmin'
+canonifyURLs = true
 
 [params]
   description = "A blog with beautiful sidenotes"

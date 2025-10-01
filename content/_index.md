@@ -19,10 +19,6 @@ NAACL 2025
 **Kyle MacMillan**, Tarun Mangla, Jamie Saxon, Nicole Marwell, Nick Feamster.\
 SIGMETRICS 2023
 
-[**Best Practices for Collecting Speed Test Data**](/papers/macmillan2022speedtest.pdf)\
-**Kyle MacMillan**, Tarun Mangla, Marc Richardson, Nick Feamster.\
-TPRC 2022
-
 [**Measuring the Performance of Video Conferencing Applications**](/papers/macmillan2021videoconferencing.pdf)\
 **Kyle MacMillan**, Tarun, Mangla, Jamie Saxon, Nick Feamster.\
 IMC 2021

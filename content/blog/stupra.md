@@ -3,9 +3,9 @@ title: "Supra Sucks"
 date: '2025-06-12'
 ---
 
-
-{{< figure
+{{< side-image
   src="/img/blog/stupra.jpg"
+  alt="Early American lawyer encountering the Bluebook."
   caption="Early American lawyer encountering the Bluebook."
 >}}
 

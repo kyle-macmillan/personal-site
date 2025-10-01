@@ -156,6 +156,44 @@ main {
   color: #8a6a6a;    
 }
 
+.small-image img {
+  width: 500px; 
+  height: auto; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* For side images */
+.side-image {
+    float: right;
+    clear: right;
+    margin-right: -55%; /* This is the key change */
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 2em;
+    font-size: 1.1rem;
+    line-height: 2;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.side-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* On smaller screens, move the image into the main content */
+@media (max-width: 760px) {
+    .side-image {
+        float: none;
+        clear: both;
+        width: 100%;
+        margin: 2em 0;
+        position: static; /* Reset the position */
+    }
+}
+
 a {
   color: #b32020;
   text-decoration: none;
