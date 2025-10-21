@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Kyle MacMillan</title>
-    <link>https://people.cs.uchicago.edu/~macmillan/posts/</link>
+    <link>http://localhost:1313/~macmillan/posts/</link>
     <description>Recent content in Posts on Kyle MacMillan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://people.cs.uchicago.edu/~macmillan/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/~macmillan/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post with Sidenotes</title>
-      <link>https://people.cs.uchicago.edu/~macmillan/posts/sample-post/</link>
+      <link>http://localhost:1313/~macmillan/posts/sample-post/</link>
       <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://people.cs.uchicago.edu/~macmillan/posts/sample-post/</guid>
+      <guid>http://localhost:1313/~macmillan/posts/sample-post/</guid>
       <description>&lt;h1 id=&#34;welcome-to-my-blog&#34;&gt;Welcome to My Blog&lt;/h1&gt;&#xA;&lt;p&gt;This is a sample post demonstrating sidenotes&lt;label for=&#34;sn-0&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;&#xA;&lt;input type=&#34;checkbox&#34; id=&#34;sn-0&#34; class=&#34;margin-toggle&#34;/&gt;&#xA;&lt;span class=&#34;sidenote&#34;&gt;This is a sidenote! It appears in the margin and provides additional context without interrupting the main text flow.&lt;/span&gt;&#xA; in Hugo using the xmin theme.&lt;/p&gt;&#xA;&lt;p&gt;Sidenotes are a great way to add&lt;label for=&#34;sn-1&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;&#xA;&lt;input type=&#34;checkbox&#34; id=&#34;sn-1&#34; class=&#34;margin-toggle&#34;/&gt;&#xA;&lt;span class=&#34;sidenote&#34;&gt;You can add &lt;strong&gt;formatted&lt;/strong&gt; content in sidenotes, including &lt;em&gt;emphasis&lt;/em&gt; and &lt;a href=&#34;https://example.com&#34;&gt;links&lt;/a&gt;.&lt;/span&gt;&#xA; supplementary information to your content without cluttering the main narrative.&lt;/p&gt;&#xA;&lt;h2 id=&#34;how-to-use-sidenotes&#34;&gt;How to Use Sidenotes&lt;/h2&gt;&#xA;&lt;p&gt;Simply use the shortcode in your markdown:&lt;/p&gt;</description>
     </item>
   </channel>

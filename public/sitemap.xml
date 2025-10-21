@@ -2,30 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://people.cs.uchicago.edu/~macmillan/</loc>
+    <loc>http://localhost:1313/~macmillan/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://people.cs.uchicago.edu/~macmillan/posts/sample-post/</loc>
+    <loc>http://localhost:1313/~macmillan/posts/sample-post/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://people.cs.uchicago.edu/~macmillan/posts/</loc>
+    <loc>http://localhost:1313/~macmillan/posts/</loc>
     <lastmod>2025-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://people.cs.uchicago.edu/~macmillan/blog/</loc>
+    <loc>http://localhost:1313/~macmillan/tags/culture/</loc>
     <lastmod>2025-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://people.cs.uchicago.edu/~macmillan/blog/generation-groups/</loc>
+    <loc>http://localhost:1313/~macmillan/tags/</loc>
     <lastmod>2025-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://people.cs.uchicago.edu/~macmillan/blog/stupra/</loc>
+    <loc>http://localhost:1313/~macmillan/blog/</loc>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/~macmillan/blog/generation-groups/</loc>
+    <lastmod>2025-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/~macmillan/tags/bluebooking/</loc>
     <lastmod>2025-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://people.cs.uchicago.edu/~macmillan/categories/</loc>
+    <loc>http://localhost:1313/~macmillan/blog/stupra/</loc>
+    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://people.cs.uchicago.edu/~macmillan/misc/</loc>
+    <loc>http://localhost:1313/~macmillan/categories/</loc>
   </url><url>
-    <loc>https://people.cs.uchicago.edu/~macmillan/papers/</loc>
+    <loc>http://localhost:1313/~macmillan/misc/</loc>
   </url><url>
-    <loc>https://people.cs.uchicago.edu/~macmillan/tags/</loc>
+    <loc>http://localhost:1313/~macmillan/papers/</loc>
   </url>
 </urlset>

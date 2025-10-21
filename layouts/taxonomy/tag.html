@@ -2,8 +2,7 @@
 
 <div class="blog-container">
   <main class="blog-main">
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    <h1>Posts tagged with "{{ .Title }}"</h1>
     <ul class="post-list">
       {{ range .Pages.ByDate.Reverse }}
         <li>

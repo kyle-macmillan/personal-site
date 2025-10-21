@@ -1,6 +1,7 @@
 ---
 title: "Will the Real Gen Z Please Stand Up"
 date: '2025-08-22'
+tags: ["culture"]
 ---
 
 # Will the Real Gen Z Please Stand Up

@@ -476,3 +476,62 @@ figcaption {
   font-style: italic;
   line-height: 1.4;
 }
+
+.blog-container {
+  display: flex;
+  gap: 2rem; /* Adjust gap between main content and sidebar */
+}
+
+.blog-main {
+  flex: 3; /* Main content takes up more space */
+}
+
+.blog-sidebar {
+  flex: 1; /* Sidebar takes up less space */
+  font-size: 1rem;
+  padding-top: 2rem; /* Align sidebar title roughly with main title */
+  border-left: 1px solid #ddd; /* Optional separator */
+  padding-left: 2rem; /* Space between separator and sidebar content */
+}
+
+.blog-sidebar h2 {
+  margin-top: 0;
+  font-size: 1.4rem; /* Slightly smaller than main H1 */
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.tag-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tag-list li {
+  margin-bottom: 0.02rem;
+}
+
+.tag-list a {
+  border-bottom: none; /* Remove underline from tag links if desired */
+}
+
+.tag-list a:hover {
+   border-bottom: 1px solid #ff6b6b; /* Add underline back on hover */
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 900px) { /* Adjust breakpoint as needed */
+  .blog-container {
+    flex-direction: column;
+  }
+
+  .blog-sidebar {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #ddd; /* Separator on top on mobile */
+    padding-top: 1rem;
+    margin-top: 2rem;
+  }
+}
