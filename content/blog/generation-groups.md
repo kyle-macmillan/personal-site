@@ -4,7 +4,9 @@ date: '2025-08-22'
 ---
 
 # Will the Real Gen Z Please Stand Up
-{{< figure src="/img/gen-z-disney.png" >}}
+{{< figure
+  src="/img/blog/gen-z-disney.png"
+>}}
 
 In the age of big data, generation groups seem almost quaint. Despite the daily
 classification of individuals into ever finer classes by tech companies,{{< sidenote >}}

@@ -6,7 +6,7 @@ I'm a JD/PhD Candidate at the University of Chicago. My current research focuses
 and privacy in both law and computer science. In the past, I worked on internet measurement problems. 
 My advisor is [Nick Feamster](https://people.cs.uchicago.edu/~feamster/).
 
-Please note I am **not** [the arts critic](https://chicago.suntimes.com/authors/**kyle-macmillan-cst) 
+Please note I am **not** [the arts critic](https://chicago.suntimes.com/authors/kyle-macmillan-cst) 
 for the Chicago Sun Times.
 
 ## Recent Papers

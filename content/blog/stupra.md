@@ -2,14 +2,13 @@
 title: "Supra Sucks"
 date: '2025-06-12'
 ---
+# Supra Sucks
 
 {{< side-image
   src="/img/blog/stupra.jpg"
   alt="Early American lawyer encountering the Bluebook."
   caption="Early American lawyer encountering the Bluebook."
 >}}
-
-# Supra Sucks
 
 Of all the Bluebook's rules, *supra* is among the worst. Pity the reader? No,
 make them work. You want the reference? Find it yourself. Seeing a *supra*
