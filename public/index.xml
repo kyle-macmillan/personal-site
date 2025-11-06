@@ -6,8 +6,22 @@
     <description>Recent content on Kyle MacMillan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/~macmillan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to Data Compression with OCaml: Prefix-Free Codes</title>
+      <link>http://localhost:1313/~macmillan/blog/compression-pt1/</link>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/~macmillan/blog/compression-pt1/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;figure class=&#34;side-image&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/~macmillan/img/blog/caravaggio-musici.jpg&#34; alt=&#34;&#34;&gt;&#xA;  &lt;figcaption&gt;Audio compression by hand, or The Musicians by Caravaggio (1595).&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;There&amp;rsquo;s no better time to learn about data compression than now, where &amp;ldquo;big&#xA;data&amp;rdquo; is now just &amp;ldquo;data.&amp;rdquo; But even before large scale data analysis was&#xA;commonplace, limited bandwidth and storage capacity encouraged the design&#xA;of good compression algorithms. The enduring relevance and importance&#xA;of compression has convinced me to dig in and learn the basics of data&#xA;compression, as well as relevant information theoretic concepts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Primer on Provenance in Databases</title>
+      <link>http://localhost:1313/~macmillan/blog/provenance-primer/</link>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/~macmillan/blog/provenance-primer/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;figure class=&#34;side-image&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/~macmillan/img/blog/diana-actaeon.jpg&#34; alt=&#34;&#34;&gt;&#xA;  &lt;figcaption&gt;Diana and Actaeon by Titian (1556-1559). According to Wikipedia, the work&amp;#39;s full provenance is known.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Although research on data provenance extends back decades, increasing&#xA;commodification and sharing of data has placed new salience on provenance.&#xA;Knowing, inter alia, the origin, chain of ownership, and what transformations&#xA;the data has undergone is useful across fields. For example,&#xA;having a complete provenance can&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;prevent (or catch) the misappropriation of proprietary or private data,&lt;/li&gt;&#xA;&lt;li&gt;help data users better understand their data,&lt;/li&gt;&#xA;&lt;li&gt;audit data sharing practices between organizations.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Given provenance&amp;rsquo;s growing applicability, this blog post provides a short&#xA;introduction to provenance in relational databases. To be sure, capturing&#xA;the provenance of data stored in other formats is important.&lt;label for=&#34;sn-1&#34; class=&#34;margin-toggle sidenote-number&#34;&gt;&lt;/label&gt;&#xA;&lt;input type=&#34;checkbox&#34; id=&#34;sn-1&#34; class=&#34;margin-toggle&#34;/&gt;&#xA;&lt;span class=&#34;sidenote&#34;&gt;See, e.g., &lt;a href=&#34;https://c2pa.org/&#34;&gt;The C2PA&amp;rsquo;s standard for provenance for images&lt;/a&gt;.&lt;/span&gt;&#xA; But relational databases continue to be one of the most&#xA;commonly used models and, by all indications, are here to stay.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My First Post with Sidenotes</title>
       <link>http://localhost:1313/~macmillan/posts/sample-post/</link>

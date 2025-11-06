@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Kyle MacMillan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/~macmillan/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compression</title>
+      <link>http://localhost:1313/~macmillan/tags/compression/</link>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/~macmillan/tags/compression/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Provenance</title>
+      <link>http://localhost:1313/~macmillan/tags/data-provenance/</link>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/~macmillan/tags/data-provenance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Databases</title>
+      <link>http://localhost:1313/~macmillan/tags/databases/</link>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/~macmillan/tags/databases/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Culture</title>
       <link>http://localhost:1313/~macmillan/tags/culture/</link>
