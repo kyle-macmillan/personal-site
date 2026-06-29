@@ -1,0 +1,131 @@
+{{ define "main" }}
+<article>
+  <h1 class="post-title">{{ .Title }}</h1>
+  {{ if not .Date.IsZero }}<p class="post-date">{{ .Date.Format "January 2, 2006" }}</p>{{ end }}
+  {{ .Content }}
+</article>
+<script>
+  document.querySelectorAll('label.sidenote-number').forEach(function(label) {
+    var input = label.nextElementSibling;
+    var sn = input && input.nextElementSibling;
+    if (!sn || !sn.classList.contains('sidenote')) return;
+
+    var hideTimer;
+    var resetTimer;
+    var narrowNotes = window.matchMedia('(max-width: 1068px)');
+    var backdrop = document.createElement('div');
+    backdrop.className = 'sidenote-backdrop';
+    backdrop.setAttribute('aria-hidden', 'true');
+
+    function resetPosition() {
+      sn.style.top = '';
+      sn.style.left = '';
+      sn.style.bottom = '';
+    }
+
+    function positionPopover() {
+      if (!narrowNotes.matches) {
+        resetPosition();
+        return;
+      }
+
+      var rect = label.getBoundingClientRect();
+      var noteWidth = Math.min(300, window.innerWidth - 32);
+      var noteHeight = sn.offsetHeight;
+      var left = rect.left + (rect.width / 2) - (noteWidth / 2);
+      var top = rect.top - noteHeight - 10;
+
+      left = Math.max(16, Math.min(left, window.innerWidth - noteWidth - 16));
+
+      if (top < 16) {
+        top = rect.bottom + 10;
+      }
+
+      top = Math.max(16, Math.min(top, window.innerHeight - noteHeight - 16));
+
+      sn.style.left = left + 'px';
+      sn.style.top = top + 'px';
+      sn.style.bottom = 'auto';
+    }
+
+    function activate() {
+      clearTimeout(hideTimer);
+      clearTimeout(resetTimer);
+      label.classList.add('sn-active');
+      sn.classList.add('sn-active');
+      positionPopover();
+      if (narrowNotes.matches && !backdrop.isConnected) {
+        document.body.appendChild(backdrop);
+      }
+      backdrop.classList.add('is-active');
+    }
+
+    function deactivate() {
+      clearTimeout(resetTimer);
+      hideTimer = setTimeout(function() {
+        label.classList.remove('sn-active');
+        sn.classList.remove('sn-active');
+        backdrop.classList.remove('is-active');
+        resetTimer = setTimeout(resetPosition, 150);
+      }, 120);
+    }
+
+    function deactivateNow() {
+      clearTimeout(hideTimer);
+      clearTimeout(resetTimer);
+      label.classList.remove('sn-active');
+      sn.classList.remove('sn-active');
+      backdrop.classList.remove('is-active');
+      resetTimer = setTimeout(resetPosition, 150);
+    }
+
+    label.addEventListener('mouseenter', function() {
+      if (narrowNotes.matches) return;
+      activate();
+    });
+    label.addEventListener('mouseleave', function() {
+      if (narrowNotes.matches) return;
+      deactivate();
+    });
+    label.addEventListener('focus', function() {
+      if (narrowNotes.matches) return;
+      activate();
+    });
+    label.addEventListener('blur', function() {
+      if (narrowNotes.matches) return;
+      deactivate();
+    });
+    sn.addEventListener('mouseenter', function() {
+      if (narrowNotes.matches) return;
+      activate();
+    });
+    sn.addEventListener('mouseleave', function() {
+      if (narrowNotes.matches) return;
+      deactivate();
+    });
+    window.addEventListener('resize', positionPopover);
+    window.addEventListener('scroll', positionPopover, { passive: true });
+    label.addEventListener('click', function(event) {
+      if (!narrowNotes.matches) return;
+      event.preventDefault();
+      event.stopPropagation();
+      if (sn.classList.contains('sn-active')) {
+        deactivateNow();
+      } else {
+        activate();
+      }
+    });
+    backdrop.addEventListener('click', function() {
+      if (!narrowNotes.matches) return;
+      if (!sn.classList.contains('sn-active')) return;
+      deactivateNow();
+    });
+    label.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        label.blur();
+        deactivate();
+      }
+    });
+  });
+</script>
+{{ end }}

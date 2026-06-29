@@ -1,4 +1,4 @@
 <figure class="side-image">
-  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}">
+  <img src="{{ .Get "src" | strings.TrimPrefix "/" | relURL }}" alt="{{ .Get "alt" }}" loading="lazy" decoding="async">
   <figcaption>{{ .Get "caption" }}</figcaption>
 </figure>

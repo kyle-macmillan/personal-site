@@ -1,29 +1,27 @@
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 <div class="blog-container">
-  <main class="blog-main">
+  <div class="blog-main">
     <h1>{{ .Title }}</h1>
     {{ .Content }}
     <ul class="post-list">
       {{ range .Pages.ByDate.Reverse }}
         <li>
-          <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="post-date">{{ partial "formatted-date.html" .Date }}</span>
         </li>
       {{ end }}
     </ul>
-  </main>
+  </div>
 
   <aside class="blog-sidebar">
     <h2>Tags</h2>
     <ul class="tag-list">
       {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
         <li>
-          <a href="{{ $taxonomy.Page.Permalink }}">{{ $taxonomy.Page.Title }}</a> ({{ $taxonomy.Count }})
+          <a href="{{ $taxonomy.Page.RelPermalink }}">{{ $taxonomy.Page.Title }}</a> ({{ $taxonomy.Count }})
         </li>
       {{ end }}
     </ul>
   </aside>
 </div>
-
-{{ partial "footer.html" . }}
+{{ end }}

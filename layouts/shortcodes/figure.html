@@ -1,0 +1,12 @@
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  {{ with .Get "link" }}<a href="{{ . | relURL }}">{{ end }}
+  <img
+    src="{{ .Get "src" | strings.TrimPrefix "/" | relURL }}"
+    {{ with .Get "alt" }}alt="{{ . }}"{{ end }}
+    {{ with .Get "width" }}width="{{ . }}"{{ end }}
+    {{ with .Get "height" }}height="{{ . }}"{{ end }}
+    loading="{{ .Get "loading" | default "lazy" }}"
+    decoding="async">
+  {{ with .Get "link" }}</a>{{ end }}
+  {{ with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

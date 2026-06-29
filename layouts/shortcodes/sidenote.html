@@ -1,3 +1,3 @@
-<label for="sn-{{ .Ordinal }}" class="margin-toggle sidenote-number"></label>
+<label for="sn-{{ .Ordinal }}" class="margin-toggle sidenote-number" tabindex="0" role="button" aria-describedby="sn-note-{{ .Ordinal }}"></label>
 <input type="checkbox" id="sn-{{ .Ordinal }}" class="margin-toggle"/>
-<span class="sidenote">{{ .Inner | markdownify }}</span>
+<span id="sn-note-{{ .Ordinal }}" class="sidenote">{{ .Inner | markdownify }}</span>

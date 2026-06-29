@@ -2,7 +2,7 @@ baseURL = 'https://people.cs.uchicago.edu/~macmillan/'
 languageCode = 'en-us'
 title = 'Kyle MacMillan'
 theme = 'xmin'
-canonifyURLs = true
+canonifyURLs = false
 
 [params]
   description = "A blog with beautiful sidenotes"
@@ -17,8 +17,8 @@ canonifyURLs = true
     url = "/blog/"
     weight = 1
   [[menu.main]]
-    name = "CV"
-    url = "/pdfs/cv.pdf"
+    name = "Personal"
+    url = "/personal/"
     weight = 2
   [[menu.main]]
     name = "Scholar"

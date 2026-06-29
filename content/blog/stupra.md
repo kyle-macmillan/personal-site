@@ -3,7 +3,6 @@ title: "Supra Sucks"
 date: '2025-06-12'
 tags: ["bluebooking"]
 ---
-# Supra Sucks
 
 {{< side-image
   src="/img/blog/stupra.jpg"

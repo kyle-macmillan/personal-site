@@ -1,27 +1,73 @@
 {{ define "main" }}
-<div class="home-content">
-  <div class="home-text">
+<div class="home-shell">
+  <aside class="home-sidebar">
+    <div class="home-sidebar-inner">
+      <nav class="home-sidebar-nav" aria-label="Main navigation">
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+      {{ with .Params.image }}
+      <figure class="home-sidebar-image">
+        <img src="{{ . | relURL }}" alt="Profile picture" width="150" height="193" decoding="async">
+        {{ with $.Params.image_caption }}
+        <figcaption class="image-caption">
+          {{ replace . "Email: " "" }}
+        </figcaption>
+        {{ end }}
+      </figure>
+      {{ end }}
+
+      {{ if or .Params.now_reading .Params.recently_read .Params.recently_watched }}
+      <div class="home-sidebar-box home-media-box-desktop">
+        {{ partial "media-box.html" .Params }}
+      </div>
+      {{ end }}
+    </div>
+  </aside>
+
+  <div class="home-content">
+    <div class="home-text">
+    <h1 class="home-title">{{ .Site.Title }}</h1>
+    {{ with .Params.subtitle }}<p class="home-subtitle">{{ . }}</p>{{ end }}
     {{ .Content }}
-    
+
+    {{ with .Params.papers }}
+    <h2>Recent Papers</h2>
+    <ul class="paper-list">
+      {{ range . }}
+      {{ $paper := . }}
+      <li>
+        <div class="paper-main">
+          {{ with $paper.url }}
+          <a class="paper-title" href="{{ . | strings.TrimPrefix "/" | relURL }}">{{ $paper.title }}</a>
+          {{ else }}
+          <span class="paper-title">{{ $paper.title }}</span>
+          {{ end }}
+          <div class="paper-authors">{{ $paper.authors | safeHTML }}</div>
+        </div>
+        <span class="paper-venue">{{ $paper.venue }}</span>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
     <h2>Recent Blog Posts</h2>
     <ul class="post-list">
     {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
       <li>
-        <span class="post-date">{{ .Date.Format "2006/01/02" }}</span>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="post-date">{{ partial "formatted-date.html" .Date }}</span>
       </li>
     {{ end }}
     </ul>
-  </div>
-  {{ with .Params.image }}
-  <figure class="home-image">
-    <img src="{{ . | relURL }}" alt="Profile picture">
-    {{ with $.Params.image_caption }}
-    <figcaption class="image-caption">
-      {{ . }}
-    </figcaption>
+    </div>
+
+    {{ if or .Params.now_reading .Params.recently_read .Params.recently_watched }}
+    <div class="home-sidebar-box home-media-box-mobile">
+      {{ partial "media-box.html" .Params }}
+    </div>
     {{ end }}
-  </figure>
-  {{ end }}
+  </div>
 </div>
 {{ end }}

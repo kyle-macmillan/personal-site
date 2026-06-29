@@ -1,0 +1,36 @@
+{{ with .now_reading }}
+<div class="home-media-section">
+  <h3 class="home-sidebar-box-title">Now Reading</h3>
+  <ul class="home-sidebar-box-list">
+    {{ range . }}
+    <li>{{ .title }}{{ with .author }}<span class="home-sidebar-box-meta">{{ . }}</span>{{ end }}</li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ if and .now_reading .recently_read }}<hr class="home-sidebar-divider">{{ end }}
+
+{{ with .recently_read }}
+<div class="home-media-section">
+  <h3 class="home-sidebar-box-title">Recently Read</h3>
+  <ul class="home-sidebar-box-list">
+    {{ range . }}
+    <li>{{ .title }}{{ with .author }}<span class="home-sidebar-box-meta">{{ . }}</span>{{ end }}</li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+{{ if and (or .now_reading .recently_read) .recently_watched }}<hr class="home-sidebar-divider">{{ end }}
+
+{{ with .recently_watched }}
+<div class="home-media-section">
+  <h3 class="home-sidebar-box-title">Recently Watched</h3>
+  <ul class="home-sidebar-box-list">
+    {{ range . }}
+    <li>{{ .title }}{{ with .director }}<span class="home-sidebar-box-meta">{{ . }}</span>{{ end }}</li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
